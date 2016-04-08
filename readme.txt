@@ -22,7 +22,9 @@ Current bugs and limitations
 
 2) C coefficient can vary wildly if NLS fitting fails. Contraint required to limit to more sensible range (-0.5 < C < -1.5)
 
-3) Add type of fit to output - currently stored in 'type' vector 
+3) Add type of fit to output - currently stored in 'type' vector
+
+4) Will fail for y values less than 0 due to log calculation in intial estimation. Current workaround is to scale up data, and then scale down output parameters manually.
 
 4) Manual R interface, R Shiny output planned
 
