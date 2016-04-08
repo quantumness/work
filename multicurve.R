@@ -1,8 +1,11 @@
-# R Curve Fitter
-# Version 1.2 --- Paul Cuckoo, January 2015
+####### Multicurve fitter for ABC curves ####### 
+# © Paul Cuckoo Annalect 2016
+# v1.3
+# https://github.com/quantumness/work/commits/master/Curve%20Extraction.R
+# 
 
 # Clear all loaded data
-rm(list=ls())
+#rm(list=ls())
 
 # Load data from CSV file
 curvedata <- read.csv("R:/Knowledge and Data/5 Software and Tools/Tools/MultiCurve Fitter/CurveData.csv")
