@@ -1,7 +1,7 @@
 ####### Multicurve fitter for ABC curves ####### 
 # © Paul Cuckoo Annalect 2016
 # v1.3
-# https://github.com/quantumness/work/commits/master/Curve%20Extraction.R
+# https://github.com/quantumness/work/blob/multi_ABC_curves/multicurve.R
 # 
 
 # Clear all loaded data
