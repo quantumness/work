@@ -41,12 +41,11 @@ gamma <- sum(A*(((2*D^2*C^2)/((1+D)^3))-((D*C*(C-1))/((1+D)^2))))
 # Calculate A*, B*, C*
 
 A.new <- alpha*(alpha*beta + alpha*gamma - 2*beta^2)/(alpha*beta + alpha*gamma - beta^2)
-B.new <- beta^2/(alpha*beta + alpha*gamma - beta^2)
+D.new <- -beta^2/(alpha*beta + alpha*gamma - beta^2)
 C.new <- (alpha*beta + alpha*gamma - 2*beta^2)/(alpha*beta)
+B.new <- D.new*(x0^C.new)
 
-cbind(ABCdata,rbind(1,A.new,B.new,C.new))
-
-      
-
-
+ABCnew <- cbind(ABCdata,rbind(1,A.new,B.new,C.new))
+colnames(ABCnew)[ncol(ABCnew)] <- "Weighted average"
+ABCnew
 
