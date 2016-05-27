@@ -63,5 +63,6 @@ final.data <- rbind(R2,coefmain)
 
 # Write CSV file
 colnames(final.data) <- curvecolname
+rownames(final.data) <- c("R2","a","b","c")
 write.csv(final.data,"R:/Knowledge and Data/5 Software and Tools/Tools/MultiCurve Fitter/ABC.csv")
 t(final.data)
